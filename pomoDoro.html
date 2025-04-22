@@ -1,0 +1,35 @@
+<html> 
+    <body>
+        <a href="menu.html" >
+            <button onclick="showSection('menu')">Return</button>
+        </a>
+<div class="container">
+    <h1>Pomodoro Timer</h1>
+    <div id="timer" class="timer">25:00</div>
+    <div id="timerOptions"> 
+        <button onclick="setWorkTime(25)">25 min</button>
+        <button onclick="setWorkTime(30)">30 min</button>
+        <button onclick="setWorkTime(45)">45 min</button>
+        <button onclick="setWorkTime(60)">60 min</button>
+    </div>
+    
+    <br>
+    <div id="controls" class = "controls"> 
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+</div>
+    <br>
+
+    <div id="breakTimer" class ="breakTimer">
+        <button onclick="setWorkTime(5)">5 min</button>
+        <button onclick="setWorkTime(10)">10 min</button>
+        <button onclick="setWorkTime(15)">15 min</button>
+        <button onclick="setWorkTime(20)">20 min</button>
+    </div>
+    <input type="checkbox" id="autoBreak"> Enable Auto Break
+</div>
+
+    <script src="./scripts:/pomoDoro.js" defer></script>
+</body>
+</html>

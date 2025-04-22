@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Productivity App 🍓</h1>
+        <div class="menu">
+            <button onclick="showSection('todo')">To-Do List</button>
+            <button onclick="showSection('pomodoro')">Pomodoro</button>
+            <button onclick="showSection('deadlines')">Deadlines</button>
+            <button onclick="showSection('destress')">Destress</button>
+        </div>
+        
+        <div id="pomodoro" class="section active">
+            <h2>Pomodoro Timer ⏳</h2>
+            <div class="time-buttons">
+                <button onclick="setTime(1500)">25 min</button>
+                <button onclick="setTime(1800)">30 min</button>
+                <button onclick="setTime(2700)">45 min</button>
+                <button onclick="setTime(3600)">60 min</button>
+            </div>
+            <div class="timer" id="timer">25:00</div>
+            <button onclick="startTimer()">Start</button>
+            <button onclick="pauseTimer()">Pause</button>
+            <button onclick="resetTimer()">Reset</button>
+            <div id="break-section" class="section">
+                <h2>Break Time! ☕</h2>
+                <div class="break-buttons">
+                    <button onclick="setBreakTime(300)">5 min</button>
+                    <button onclick="setBreakTime(600)">10 min</button>
+                    <button onclick="setBreakTime(900)">15 min</button>
+                </div>
+                <button onclick="startBreak()">Start Break</button>
+                <div class="timer" id="break-timer">5:00</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

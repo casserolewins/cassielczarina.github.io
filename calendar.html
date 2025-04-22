@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calendar with Tasks</title>
+    <link rel="stylesheet" href="./styles:/calendar.css">
+</head>
+<body>
+    <a href="menu.html" >
+        <button onclick="showSection('menu')">Return</button>
+    </a>
+    <div class="calendar">
+        <div class="calendar-header">
+            <button id="prevMonth">&lt;</button>
+            <h2 id="currentMonthYear"></h2>
+            <button id="nextMonth">&gt;</button>
+        </div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+        <div id="eventDisplay"></div>
+        <div id="addTaskForm" style="display: none;">
+            <h3>Add Task</h3>
+            <input type="text" id="taskTitle" placeholder="Task Title">
+            <button id="saveTask">Save</button>
+            <button id="cancelTask">Cancel</button>
+        </div>
+    </div>
+    <script src="./scripts:/calendar.js"></script>
+</body>
+</html>
